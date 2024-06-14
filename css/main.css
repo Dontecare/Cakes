@@ -1,0 +1,203 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: hsl(167.37deg 14.96% 75.1%);
+  color: #333;
+}
+
+header {
+  background-color: hsl(167.37deg 14.96% 75.1%);
+  padding: 20px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 40px;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+}
+
+form label {
+  display: block;
+  margin-top: 10px;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+}
+
+form button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: hsl(167.37deg 14.96% 75.1%);
+}
+
+.main-wrapper {
+  background-color: white;
+  padding: 20px;
+  max-width: 80%; /* Adjust maximum width as needed */
+  margin: 0 auto; /* Center the wrapper horizontally */
+  margin-bottom: 50px;
+}
+
+.image-container {
+  text-align: center; /* Center the image */
+}
+
+.image-container img {
+  max-width: 100%; /* Ensure image does not exceed container width */
+  height: auto; /* Maintain aspect ratio */
+  max-height: 300px; /* Limit maximum height if needed */
+}
+
+
+.image-links-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px; /* Adjust gap as needed */
+  padding: 20px; /* Adjust padding as needed */
+}
+
+.image-links-container a {
+  flex: 0 1 calc(50% - 10px); /* 50% width minus gap */
+  box-sizing: border-box;
+}
+
+.image-links-container img {
+  width: 100%;
+  max-height: 90%; /* Set your desired max height here */
+  object-fit: cover;
+  display: block;
+}
+
+
+
+.buttons-container {
+  text-align: center;
+  margin: 20px 0;
+}
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  margin: 0 10px;
+}
+.quote-block {
+  text-align: center;
+  margin: 20px;
+}
+
+.carousel-wrapper {
+  background-color: white;
+  width: 100%;
+  padding: 20px; /* Adjust padding as needed */
+  box-sizing: border-box; /* Ensure padding is included in width calculation */
+}
+.carousel {
+  position: relative;
+  max-width: 800px; /* Adjust maximum width as needed */
+  width: 100%; /* Ensure it takes up the full width available */
+  margin: 0 auto; /* Center horizontally */
+}
+
+.carousel-button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2; /* Ensure buttons are above carousel items */
+}
+
+.carousel-button.prev {
+  left: 10px; /* Adjust distance from the left edge */
+}
+
+.carousel-button.next {
+  right: 10px; /* Adjust distance from the right edge */
+}
+
+.carousel-track-container {
+  overflow: hidden;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+.content {
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: white;
+  margin: 20px;
+  margin-right: 60px;
+}
+
+.carousel-image {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px; /* Adjust spacing between image and content */
+}
+
+.carousel-image img {
+  width: 100px; /* Adjust size of circular image */
+  height: 100px; /* Adjust size of circular image */
+  border-radius: 50%; /* Ensure image is circular */
+  object-fit: cover;
+}
